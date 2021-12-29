@@ -2,8 +2,6 @@ import os
 import discord
 import asyncio
 import random
-import time
-from datetime import datetime as dt, timedelta
 import colorama
 from discord.ext import commands
 from colorama import Fore
@@ -68,9 +66,6 @@ dank.se = False
 dank.fish = False
 dank.hunt = False
 dank.dig = False
-timerr=0.5
-timeww=0.5
-timeii=0.166666666667
 
 @dank.command()
 async def beg(ctx, param=None):
