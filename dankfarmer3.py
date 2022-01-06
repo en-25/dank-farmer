@@ -9,7 +9,6 @@ init()
 data = {}
 
 with open('app.json') as f:
-    data = json.load(f)
 token = data['token']
 prefix = data['prefix']
 
