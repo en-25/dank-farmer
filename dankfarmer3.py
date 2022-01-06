@@ -9,8 +9,8 @@ init()
 data = {}
 
 with open('app.json') as f:
-    token = data['token']
-    prefix = data['prefix']
+    require('dotenv').config({ path: 'dotenv' })
+
 
 dank = commands.Bot(command_prefix=prefix, self_bot=True, case_insensitive=True, intents=discord.Intents.all())
 dank.remove_command('help')
