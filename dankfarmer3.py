@@ -7,9 +7,9 @@ from discord.ext import commands
 from colorama import Fore, init
 init()
 data = {}
+require('dotenv').config({ path: 'dotenv' })
 
-with open('app.json') as f:
-    require('dotenv').config({ path: 'dotenv' })
+
 
 
 dank = commands.Bot(command_prefix=prefix, self_bot=True, case_insensitive=True, intents=discord.Intents.all())
