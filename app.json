@@ -1,0 +1,15 @@
+{
+   "name": "Dank Farmer",
+   "repository": "https://github.com/en-25/dankfarmer",
+   "stack": "heroku-20",
+   "env": {
+      "token": {
+         "description": "Your account's token, used for grinding dank memer.",
+         "required": true
+      },
+      "prefix": {
+         "description": "Prefix used to run commands",
+         "required": true
+      }
+   }
+}
