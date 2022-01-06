@@ -1,2 +1,2 @@
-web: python dankfarmer1.py
-worker: python dankfarmer1.py
+web: python dankfarmer3.py
+worker: python dankfarmer3.py
