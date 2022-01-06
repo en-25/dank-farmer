@@ -8,7 +8,7 @@ from colorama import Fore, init
 init()
 data = {}
 
-with open('token.json') as f:
+with open('app.json') as f:
     data = json.load(f)
 token = data['token']
 prefix = data['prefix']
