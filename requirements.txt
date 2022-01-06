@@ -1,0 +1,4 @@
+discord.py
+colorama~=0.4.4
+aiohttp~=3.7.3
+discord~=1.0.1
