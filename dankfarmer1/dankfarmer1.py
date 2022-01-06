@@ -270,4 +270,3 @@ async def credits(ctx):
     await ctx.send(embed=embed)
 
 dank.run(token, bot=False)
-
