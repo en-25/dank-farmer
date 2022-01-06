@@ -7,10 +7,9 @@ from discord.ext import commands
 from colorama import Fore, init
 init()
 data = {}
-require('dotenv').config({ path: 'dotenv' })
 
-
-
+token = os.environ.get('token')
+prefix = os.environ.get('prefix')
 
 dank = commands.Bot(command_prefix=prefix, self_bot=True, case_insensitive=True, intents=discord.Intents.all())
 dank.remove_command('help')
