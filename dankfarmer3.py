@@ -15,6 +15,10 @@ prefix = os.environ.get('PREFIX')
 dank = commands.Bot(command_prefix=prefix, self_bot=True, case_insensitive=True, intents=discord.Intents.all())
 dank.remove_command('help')
 
+stream_url = "https://www.twitch.tv/monstercat"
+tts_language = "en"
+
+start_time = datetime.datetime.utcnow()
 
 @dank.event
 async def on_ready():
@@ -2360,6 +2364,16 @@ async def dig(ctx, param=None):
                 await asyncio.sleep(12375)
             except:
                 print("Couldn't Dig. Did the channel get nuked or deleted?")
+
+
+@dank.command(aliases=["streaming"])
+async def stream(ctx, *, message):
+    await ctx.message.delete()
+    stream = discord.Streaming(
+        name=message,
+        url=stream_url,
+    )
+    await MindPalace.change_presence(activity=stream)
 
 
 @dank.command()
