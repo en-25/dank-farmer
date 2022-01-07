@@ -197,6 +197,9 @@ async def hunt(ctx, param=None):
             try:
                 await ctx.send('pls hunt')
                 await asyncio.sleep(41)
+                await ctx.send('pls hunt')
+                await asyncio.sleep(41)
+                await asyncio.sleep(120)
             except:
                 print("Couldn't Hunt. Did the channel get nuked or deleted?")
 
