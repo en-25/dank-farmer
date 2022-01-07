@@ -17,6 +17,7 @@ dank.remove_command('help')
 
 stream_url = "https://www.twitch.tv/monstercat"
 tts_language = "en"
+
 start_time = datetime.datetime.utcnow()
 
 @dank.event
@@ -925,7 +926,6 @@ async def pm(ctx, param=None):
 @dank.command()
 async def fish(ctx, param=None):
     await ctx.message.delete()
-    startTime=dt.now()
     if param is None:
         await ctx.send("Please specify yes or no", delete_after=3)
         return
