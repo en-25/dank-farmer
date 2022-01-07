@@ -3,11 +3,11 @@
    "repository": "https://github.com/en-25/dank-farmer",
    "stack": "heroku-20",
    "env": {
-      "token": {
+      "TOKEN": {
          "description": "Your account's token, used for grinding dank memer.",
          "required": true
       },
-      "prefix": {
+      "PREFIX": {
          "description": "Prefix used to run commands",
          "required": true
       }
