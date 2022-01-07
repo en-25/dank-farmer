@@ -17,7 +17,6 @@ dank.remove_command('help')
 
 stream_url = "https://www.twitch.tv/monstercat"
 tts_language = "en"
-
 start_time = datetime.datetime.utcnow()
 
 @dank.event
@@ -58,6 +57,9 @@ async def help(ctx):
     embed.add_field(name=" :frog: Fish", value=f"Using cmd `{prefix}fish [on/off]`", inline=False)
     embed.add_field(name=" :frog: Hunt", value=f"Using cmd `{prefix}hunt [on/off]`", inline=False)
     embed.add_field(name=" :frog: Shovel", value=f"Using cmd `{prefix}dig [on/off]`", inline=False)
+    embed.add_field(name=" :frog: Uptime", value=f"Using cmd `{prefix}uptime`", inline=False)
+    embed.add_field(name=" :frog: Stream", value=f"Using cmd `{prefix}stream [message]`", inline=False)
+    embed.add_field(name=" :frog: Stop Streaming", value=f"Using cmd `{prefix}stopstream`", inline=False)
     embed.add_field(name=" :frog: Credits", value=f"See The Developer, using cmd `{prefix}credits`", inline=False)
     embed.add_field(name=" :frog: Exit", value=f"Exits The Program, using the cmd `{prefix}exit`", inline=True)
     await ctx.send(embed=embed)
@@ -2366,6 +2368,12 @@ async def dig(ctx, param=None):
                 print("Couldn't Dig. Did the channel get nuked or deleted?")
 
 
+@dank.command(aliases=["stopstreaming"])
+async def stopstream(ctx):
+    await ctx.message.delete()
+    await dank.change_presence(activity=None, status=discord.Status.dnd)
+
+
 @dank.command(aliases=["streaming"])
 async def stream(ctx, *, message):
     await ctx.message.delete()
@@ -2373,7 +2381,7 @@ async def stream(ctx, *, message):
         name=message,
         url=stream_url,
     )
-    await MindPalace.change_presence(activity=stream)
+    await dank.change_presence(activity=stream)
 
 
 @dank.command()
