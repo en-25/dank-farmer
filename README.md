@@ -9,8 +9,8 @@
 ### ___Installation methods___
 - Make sure [Python](https://www.python.org/downloads/release/python-397/) is installed on your system.
 - Download the zip file from the github then unzip it.
-- Open the file `install.bat`.
-- After modules are installed, run `launch.bat`.
+- Run the file `install.bat`.
+- After modules are installed, then run `launch.bat`.
 - Enter the prefix and token then your program will run. 
 
 ## DankFarmer2
@@ -22,7 +22,7 @@
 
 ### ___Installation methods___
 - Click on the image below and login to continue the setup. 
-- After login, enter the prefix & token of your account and click on <kbd>build-up</kbd> button.
+- After login, enter the prefix & token of your account and click on <kbd>deploy app</kbd> button.
 - Then go to <kbd>resources</kbd> tab and change the dynos from web to worker.
 - After changing the dynos, go to <kbd>view logs</kbd> and you can see your program running there. 
 
