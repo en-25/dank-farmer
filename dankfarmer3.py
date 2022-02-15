@@ -9,8 +9,9 @@ from colorama import Fore, init
 init()
 data = {}
 
-prefix = ('PREFIX')
-token = ('TOKEN')
+prefix = os.environ.get('PREFIX')
+token = os.environ.get('TOKEN')
+abc = os.environ.get('CHANNELID')
 os.system('cls')
 
 dank = commands.Bot(command_prefix=prefix, self_bot=True, case_insensitive=True, intents=discord.Intents.all())
@@ -45,7 +46,7 @@ async def on_ready():
   ''' + Fore.RESET)
     dank.play = True
     if dank.play == True:
-            channel = dank.get_channel(CHANNELID)
+            channel = dank.get_channel(abc)
             await channel.send("Autoplay is successfully bound to `" + channel.name + "`", delete_after=3)
     else: 
         await ctx.send("Autoplay is successfully *disabled*", delete_after=3)
