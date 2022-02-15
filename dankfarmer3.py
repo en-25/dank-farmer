@@ -44,8 +44,7 @@ async def on_ready():
   ''' + Fore.RESET)
     dank.play = True
     if dank.play == True:
-            abc = os.environ.get('CHANNELID')
-            channel = dank.get_channel(abc)
+            channel = dank.get_channel(int(os.environ.get('CHANNELID')))
             await channel.send("Autoplay is successfully bound to `" + channel.name + "`", delete_after=3)
     else: 
         await ctx.send("Autoplay is successfully *disabled*", delete_after=3)
