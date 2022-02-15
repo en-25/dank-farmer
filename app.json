@@ -10,6 +10,10 @@
       "PREFIX": {
          "description": "Prefix used to run commands",
          "required": true
+      },
+      "CHANNELID": {
+         "description": "Enter the channelid in which you wants to grind the Dank Memer.",
+         "required": true
       }
    }
 }
