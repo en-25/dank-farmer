@@ -21,7 +21,7 @@
 - Make sure [Python](https://www.python.org/downloads/release/python-397/) is installed on your system.
 - Download the zip file from the github then unzip it.
 - Run the file `install.bat`.
-- Then edit the file named `dankfarmer2.py` :- <br>
+- Then edit the file named `dankfarmer2.py`:- <br>
   - Enter your account's token where it is written `Enter your token`. <br>
   - Enter the channel id (where you wanna grind DankMemer) where it is written `Enter the channelid`.
 - All you have to do now is run `launch2.bat` whenever you wants to grind and then you can stop it by closing the file.
