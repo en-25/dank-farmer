@@ -38,7 +38,7 @@ async def on_ready():
 {Fore.GREEN}            User: {Fore.LIGHTRED_EX}{dank.user.name}#{dank.user.discriminator} ID: {dank.user.id}
 {Fore.GREEN}            Guilds: {Fore.LIGHTRED_EX}{len(dank.guilds)}
 {Fore.GREEN}            Prefix: {Fore.LIGHTRED_EX}{dank.command_prefix}
-{Fore.GREEN}            Version: {Fore.LIGHTRED_EX}1
+{Fore.GREEN}            Version: {Fore.LIGHTRED_EX}2.5
 {Fore.MAGENTA}          ╚═════════════════════════════════════════════════════════╝
 
   ''' + Fore.RESET)
