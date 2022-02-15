@@ -15,14 +15,23 @@
 
 ## DankFarmer2
 - automatic
-- uhhh don't use it for now cuz i am still working on it so it isn't complete.
+- you can host and use it locally.
+
+### ___Installation methods___
+- Make sure [Python](https://www.python.org/downloads/release/python-397/) is installed on your system.
+- Download the zip file from the github then unzip it.
+- Run the file `install.bat`.
+- Then edit the file named `dankfarmer2.py` :- <br>
+  - Enter your account's token where it is written `Enter your token`. <br>
+  - Enter the channel id (where you wanna grind DankMemer) where it is written `Enter the channelid`.
+- All you have to do now is run `launch2.bat` whenever you wants to grind and then you can stop it by closing the file.
 
 ## DankFarmer3 (recommended)
 - hosting on heroku
 
 ### ___Installation methods___
 - Click on the image below and login to continue the setup. 
-- After login, enter the prefix & token of your account and click on <kbd>deploy app</kbd> button.
+- After login, enter the channelid (where you wanna grind), prefix & token of your account and click on <kbd>deploy app</kbd> button.
 - Then go to <kbd>resources</kbd> tab and change the dynos from web to worker.
 - After changing the dynos, go to <kbd>view logs</kbd> and you can see your program running there. 
 
