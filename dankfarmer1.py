@@ -74,7 +74,7 @@ async def beg(ctx, param=None):
         await ctx.send("Please specify yes or no", delete_after=3)
         return
     if str(param).lower() == 'true' or str(param).lower() == 'on':
-        if isinstance(ctx.message.channel, discord.DMChannel) or isinstance(ctx.message.channel, discord.GroupChannel):
+        if isinstance(ctx.message.channel, (discord.DMChannel, discord.GroupChannel)):
             await ctx.send("You can't bind Autobeg to a DM or GC", delete_after=3)
             return
         else:
@@ -101,7 +101,7 @@ async def daily(ctx, param=None):
         await ctx.send("Please specify yes or no", delete_after=3)
         return
     if str(param).lower() == 'true' or str(param).lower() == 'on':
-        if isinstance(ctx.message.channel, discord.DMChannel) or isinstance(ctx.message.channel, discord.GroupChannel):
+        if isinstance(ctx.message.channel, (discord.DMChannel, discord.GroupChannel)):
             await ctx.send("You can't bind Autodaily to a DM or GC", delete_after=3)
             return
         else:
@@ -129,7 +129,7 @@ async def pm(ctx, param=None):
         await ctx.send("Please specify yes or no", delete_after=3)
         return
     if str(param).lower() == 'true' or str(param).lower() == 'on':
-        if isinstance(ctx.message.channel, discord.DMChannel) or isinstance(ctx.message.channel, discord.GroupChannel):
+        if isinstance(ctx.message.channel, (discord.DMChannel, discord.GroupChannel)):
             await ctx.send("You can't bind Autopm to a DM or GC", delete_after=3)
             return
         else:
@@ -159,7 +159,7 @@ async def fish(ctx, param=None):
         await ctx.send("Please specify yes or no", delete_after=3)
         return
     if str(param).lower() == 'true' or str(param).lower() == 'on':
-        if isinstance(ctx.message.channel, discord.DMChannel) or isinstance(ctx.message.channel, discord.GroupChannel):
+        if isinstance(ctx.message.channel, (discord.DMChannel, discord.GroupChannel)):
             await ctx.send("You can't bind Autofish to a DM or GC", delete_after=3)
             return
         else:
@@ -184,7 +184,7 @@ async def hunt(ctx, param=None):
         await ctx.send("Please specify yes or no", delete_after=3)
         return
     if str(param).lower() == 'true' or str(param).lower() == 'on':
-        if isinstance(ctx.message.channel, discord.DMChannel) or isinstance(ctx.message.channel, discord.GroupChannel):
+        if isinstance(ctx.message.channel, (discord.DMChannel, discord.GroupChannel)):
             await ctx.send("You can't bind Autohunt to a DM or GC", delete_after=3)
             return
         else:
@@ -209,7 +209,7 @@ async def se(ctx, param=None):
         await ctx.send("Please specify yes or no", delete_after=3)
         return
     if str(param).lower() == 'true' or str(param).lower() == 'on':
-        if isinstance(ctx.message.channel, discord.DMChannel) or isinstance(ctx.message.channel, discord.GroupChannel):
+        if isinstance(ctx.message.channel, (discord.DMChannel, discord.GroupChannel)):
             await ctx.send("You can't bind Autose to a DM or GC", delete_after=3)
             return
         else:
@@ -236,7 +236,7 @@ async def dig(ctx, param=None):
         await ctx.send("Please specify yes or no", delete_after=3)
         return
     if str(param).lower() == 'true' or str(param).lower() == 'on':
-        if isinstance(ctx.message.channel, discord.DMChannel) or isinstance(ctx.message.channel, discord.GroupChannel):
+        if isinstance(ctx.message.channel, (discord.DMChannel, discord.GroupChannel)):
             await ctx.send("You can't bind Autodig to a DM or GC", delete_after=3)
             return
         else:
