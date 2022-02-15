@@ -11,8 +11,6 @@ data = {}
 
 prefix = os.environ.get('PREFIX')
 token = os.environ.get('TOKEN')
-abc = os.environ.get('CHANNELID')
-os.system('cls')
 
 dank = commands.Bot(command_prefix=prefix, self_bot=True, case_insensitive=True, intents=discord.Intents.all())
 dank.remove_command('help')
@@ -46,6 +44,7 @@ async def on_ready():
   ''' + Fore.RESET)
     dank.play = True
     if dank.play == True:
+            abc = os.environ.get('CHANNELID')
             channel = dank.get_channel(abc)
             await channel.send("Autoplay is successfully bound to `" + channel.name + "`", delete_after=3)
     else: 
